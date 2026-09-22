@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemitério de Ferro - Batalha de Kursk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="#" class="active">Capa</a>
+            <a href="#">O Álbum</a>
+            <a href="#">Contexto Histórico</a>
+            <a href="#">Sobre o Projeto</a>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="list">
+
+            <!-- ============================================== -->
+            <!-- FAIXA 10 (Fica aqui no topo para a Capa ser o Item 2 e abrir primeiro) -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/10 - O Crepúsculo dos Deuses (A Virada).jpg');">
+                <audio id="audio-10" src="musicas/10 - O Crepúsculo dos Deuses (A Virada)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">10 - O Crepúsculo</div>
+                    <div class="name">(A Virada)</div>
+                    <div class="des">A máquina de guerra alemã para definitivamente. A maré vira, marcando o início da marcha soviética até Berlim.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-10">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-10"></div></div>
+                        <span class="time-total" id="total-10">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(10)" id="btn-10">TOCAR FAIXA</button>
+                        <button onclick="openModal(10)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-10" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/10 - O Crepúsculo dos Deuses (A Virada).jpg" alt="A Virada">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>O Crepúsculo (A Virada)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Sangrando em Prokhorovka e com os Aliados desembarcando na Sicília, Hitler ordenou o fim da Operação Cidadela e a retirada de suas unidades panzer. A máquina de guerra alemã estagnou. Imediatamente, o Exército Vermelho lançou devastadoras contraofensivas. O cemitério de ferro marcou o crepúsculo do domínio alemão.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                O campo lavrado retorna ao silêncio<br>
+                                A terra coberta de escura escória<br>
+                                O Eixo percebe o amargo do prêmio<br>
+                                A força na Europa já não canta glória<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                A fúria alemã cancelou a surpresa<br>
+                                Desvia os blindados pro sul da Europa<br>
+                                O front russo esmaga a falsa nobreza<br>
+                                Quebrando o orgulho da sua melhor tropa<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                A foice e o martelo suspiram cansados<br>
+                                A perda foi vasta, mas Jukov venceu<br>
+                                O exército avança, com passos pesados<br>
+                                A sorte da guerra de lado pendeu<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A fera recua perdendo a coroa<br>
+                                A grande virada na terra ressoa<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A sombra do Eixo desaba no pó!<br>
+                                O leste liberta a vida que avança<br>
+                                A marcha pra oeste tem um rumo só<br>
+                                E a praga da guerra tem sua cobrança!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                As feras de aço afundaram na lama<br>
+                                Relíquias mortais de um sonho sombrio<br>
+                                A estrela vermelha no céu logo clama<br>
+                                Enchendo de vida o campo vazio<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                A história registra o baque profundo<br>
+                                De Kursk até a porta de um velho Berlim<br>
+                                A linha sagrada que salvou o mundo<br>
+                                E assinou do inimigo o princípio do fim<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                Nas páginas rubras do tempo marcado<br>
+                                Do sangue e das cinzas caídos no chão<br>
+                                A fúria do aço que foi congelado<br>
+                                E o grito de guerra de uma só nação!<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A fera recua perdendo a coroa<br>
+                                A grande virada na terra ressoa<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A sombra do Eixo desaba no pó!<br>
+                                O leste liberta a vida que avança<br>
+                                A marcha pra oeste tem um rumo só<br>
+                                E a praga da guerra tem sua cobrança!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- CAPA DO ÁLBUM (Como é o Item 2, aparece ao carregar) -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/Capa.jpg');">
+                <div class="content">
+                    <div class="title">Cemitério de Ferro</div>
+                    <div class="name">A BATALHA DE KURSK</div>
+                    <div class="des">Uma ópera metal-orquestral sobre a maior batalha de blindados da história da humanidade. Explore as faixas para ouvir e ler os arquivos históricos.</div>
+                    <div class="btn">
+                        <button class="next-btn-capa" onclick="document.querySelector('.next').click();">INICIAR JORNADA</button>
+                        <button onclick="openModal('capa')">REGISTROS VISUAIS</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-capa" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-text" style="width: 100%;">
+                            <h3>Registros Visuais Classificados</h3>
+                            <p><strong>ANEXO MILITAR:</strong> Coleção de capturas visuais, imagens reais de arquivo e reconstruções em CGI documentando a Operação Cidadela e as táticas aplicadas no Front Leste.</p>
+                            
+                            <div class="video-grid">
+                                <div class="video-card">
+                                    <h4>Artilharia Russa</h4>
+                                    <!-- A palavra 'autoplay;' foi removida de todos os 'allow="..."' -->
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F39690974673835088%2F&show_text=false&width=380&t=0" width="380" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                                <div class="video-card">
+                                    <h4>Katyushas Atirando</h4>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3364753857030147%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                                <div class="video-card">
+                                    <h4>Ações dos Alemães</h4>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1062087869986671%2F&show_text=false&width=560&t=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                                <div class="video-card">
+                                    <h4>A Operação Cidadela</h4>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1580785256238115%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                                <div class="video-card">
+                                    <h4>Caça-Tanques Ferdinand</h4>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2264417694098083%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                                <div class="video-card">
+                                    <h4>CGI da Batalha</h4>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F28306999515553154%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 01 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/1 - A Saliência (O Plano Cidadela).jpg');">
+                <audio id="audio-1" src="musicas/01 - A Saliência (O Plano Cidadela)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">1 - A Saliência</div>
+                    <div class="name">(O Plano Cidadela)</div>
+                    <div class="des">O início da Operação Cidadela. O alto comando alemão prepara a maior ofensiva de blindados da história.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-1">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-1"></div></div>
+                        <span class="time-total" id="total-1">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(1)" id="btn-1">TOCAR FAIXA</button>
+                        <button onclick="openModal(1)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-1" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/1 - A Saliência (O Plano Cidadela).jpg" alt="A Saliência">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>O Plano Cidadela</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Na primavera de 1943, após a devastadora derrota em Stalingrado, o Alto Comando Alemão (OKW) precisava retomar a iniciativa. O mapa revelava uma imensa "saliência" (um bolsão) de tropas soviéticas projetando-se sobre as linhas alemãs ao redor da cidade de Kursk. O plano, batizado de Operação Cidadela, era um ataque de pinça massivo pelo norte e pelo sul para cercar e aniquilar as forças do Exército Vermelho, restaurando a glória da Wehrmacht.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                A linha de frente no leste sangrou<br>
+                                No fundo da vala que a pá levantou<br>
+                                Os mapas de guerra já ditam o plano<br>
+                                Na curva de Kursk, o terror soberano<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                A pinça do Eixo no mapa traçada<br>
+                                Pro norte e pro sul vai trazer o pavor<br>
+                                A foice e martelo na terra cravada<br>
+                                Num frio de espera, silêncio e suor<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                O tempo se arrasta, eu limpo o canhão<br>
+                                O Eixo aguarda a forja do mal<br>
+                                O sol do verão já condena o meu chão<br>
+                                E a alma prepara pro choque cabal<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O véu do silêncio na noite rompeu<br>
+                                O plano secreto na sombra morreu<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A vil Cidadela, a lâmina, o fim!<br>
+                                O mar de blindados pra terra rasgar<br>
+                                A marcha da morte avança pra mim<br>
+                                E o sangue do mundo começa a jorrar!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Milhões de explosivos plantados no chão<br>
+                                As oito trincheiras pro Eixo sangrar<br>
+                                A terra estremece em pura tensão<br>
+                                Do monstro de ferro que vem pra matar<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                O atraso soterra a chance alemã<br>
+                                A fera de aço domina o local<br>
+                                O choque das bestas na luz da manhã<br>
+                                No palco perfeito pro rito final<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                A pinça de aço começa a fechar<br>
+                                O fogo devasta o imenso planalto<br>
+                                Ninguém nessa linha ousa recuar<br>
+                                Nós somos a isca pro grande assalto<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O véu do silêncio na noite rompeu<br>
+                                O plano secreto na sombra morreu<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A vil Cidadela, a lâmina, o fim!<br>
+                                O mar de blindados pra terra rasgar<br>
+                                A marcha da morte avança pra mim<br>
+                                E o sangue do mundo começa a jorrar!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 02 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/2 - A Forja do Medo (As Máquinas).jpg');">
+                <audio id="audio-2" src="musicas/02 - A Forja do Medo (As Máquinas)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">2 - A Forja do Medo</div>
+                    <div class="name">(As Máquinas)</div>
+                    <div class="des">As indústrias operam em colapso. O aço é moldado para criar os monstros que decidirão o destino do mundo.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-2">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-2"></div></div>
+                        <span class="time-total" id="total-2">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(2)" id="btn-2">TOCAR FAIXA</button>
+                        <button onclick="openModal(2)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-2" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/2 - A Forja do Medo (As Máquinas).jpg" alt="As Máquinas">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>A Forja do Medo (As Máquinas)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Hitler adiou o ataque seguidas vezes para aguardar a produção de seus novos super-tanques: os Panther, os temíveis Tiger I e os monstruosos caça-tanques Ferdinand. Enquanto a Alemanha focava em engenharia complexa e super-pesada, a União Soviética transferiu suas fábricas para os Montes Urais, produzindo em massa o simples, rústico e incansável tanque T-34.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                As portas das fábricas cospem seus monstros<br>
+                                O Tiger desperta da sua letargia<br>
+                                A chapa pesada não teme os encontros<br>
+                                O cano decreta o final da agonia<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                O Panther avança com o peito inclinado<br>
+                                Felino de ferro sedento por caça<br>
+                                O ronco do motor é som amaldiçoado<br>
+                                Que deixa um rastro de morte e fumaça<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                O denso Ferdinand, sem torre e sem medo<br>
+                                É um caçador de feição visceral<br>
+                                A chapa de aço, um imenso rochedo<br>
+                                Aguarda o abate no front colossal<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Engrenagens giram em fúria e calor<br>
+                                A máquina fria não sente pavor<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                Monstros de aço marchando pro leste!<br>
+                                A última aposta da fúria alemã<br>
+                                A sombra da cruz que o campo reveste<br>
+                                Buscando a glória na luz da manhã!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Do lado de lá, a resposta é de ferro<br>
+                                O T-Trinta e Quatro aos milhares surgiu<br>
+                                A forma perfeita num campo de desterro<br>
+                                O tanque que a pátria no gelo exigiu<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                Sem luxo e sem rádio, só força e vontade<br>
+                                Soldados forjados com mãos calejadas<br>
+                                A máquina bruta pra brutalidade<br>
+                                Que ganha o espaço nas terras geladas<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                Dez mil armaduras aguardam o sinal<br>
+                                A forja finalmente vai se abrir<br>
+                                A vida não vale um pedaço de metal<br>
+                                E a terra implora pro fogo cair<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Engrenagens giram em fúria e calor<br>
+                                A máquina fria não sente pavor<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                Monstros de aço marchando pro leste!<br>
+                                A última aposta da fúria alemã<br>
+                                A sombra da cruz que o campo reveste<br>
+                                Buscando a glória na luz da manhã!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 03 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/3 - Ecos no Rádio (A Interceptação).jpg');">
+                <audio id="audio-3" src="musicas/03 - Ecos no Rádio (A Interceptação)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">3 - Ecos no Rádio</div>
+                    <div class="name">(A Interceptação)</div>
+                    <div class="des">A inteligência soviética quebra os códigos. O plano alemão não é mais um segredo e a armadilha é preparada.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-3">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-3"></div></div>
+                        <span class="time-total" id="total-3">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(3)" id="btn-3">TOCAR FAIXA</button>
+                        <button onclick="openModal(3)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-3" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/3 - Ecos no Rádio (A Interceptação).jpg" alt="A Interceptação">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>Ecos no Rádio (A Interceptação)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> A <i>Blitzkrieg</i> alemã sempre dependeu da surpresa. Porém, graças à rede de espiões "Lucy" na Suíça e aos criptógrafos britânicos em Bletchley Park, que decifraram a máquina Enigma, o segredo desmoronou. O Alto Comando Soviético soube exatamente onde, quando e com qual força os alemães atacariam, permitindo-lhes preparar uma armadilha perfeita.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                A escuta desvenda a cruel mensagem<br>
+                                A máquina Enigma perdeu a razão<br>
+                                O comando assume a total vantagem<br>
+                                E o Eixo caminha pra condenação<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Ouvidos ocultos nas ilhas sombrias<br>
+                                Captam as cifras de morte e pavor<br>
+                                Traduzem as cartas e as profecias<br>
+                                Matando a surpresa do vil invasor<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O rádio desvenda o segredo guardado<br>
+                                O Tigre avança pro campo minado<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                Jukov recebe o papel em silêncio<br>
+                                O mapa com todas as rotas do mal<br>
+                                Conhece a data, a hora e o prêmio<br>
+                                E arma a ratoeira no front oriental<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Trincheiras cavadas no suor do engano<br>
+                                O tempo que o Eixo perdeu sem saber<br>
+                                O russo desfaz o detalhe do plano<br>
+                                Pois sabe a hora que o céu vai arder<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O rádio desvenda o segredo guardado<br>
+                                O Tigre avança pro campo minado<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                O plano quebrado na noite gelada!<br>
+                                A teia de aço que não tem perdão<br>
+                                O leste já sabe o final da jornada<br>
+                                E aguarda nas sombras com a arma na mão!<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                A grande surpresa agora é só pó<br>
+                                O grande caçador é a caça afinal<br>
+                                O exército avança acreditando estar só<br>
+                                Marchando de encontro à barreira fatal<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                A mente sagaz derrotou o canhão<br>
+                                Antes da primeira granada estourar<br>
+                                As ondas de rádio já guiam a mão<br>
+                                Que a espada do Eixo irá quebrar<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O rádio desvenda o segredo guardado<br>
+                                O Tigre avança pro campo minado<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                O plano quebrado na noite gelada!<br>
+                                A teia de aço que não tem perdão<br>
+                                O leste já sabe o final da jornada<br>
+                                E aguarda nas sombras com a arma na mão!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 04 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/4 - Terra e Fogo (A Defesa de Jukov).jpg');">
+                <audio id="audio-4" src="musicas/04 - Terra e Fogo (A Defesa de Jukov)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">4 - Terra e Fogo</div>
+                    <div class="name">(A Defesa de Jukov)</div>
+                    <div class="des">Quilômetros de trincheiras e minas são cavados na terra. A defesa em profundidade desenhada por Jukov aguarda.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-4">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-4"></div></div>
+                        <span class="time-total" id="total-4">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(4)" id="btn-4">TOCAR FAIXA</button>
+                        <button onclick="openModal(4)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-4" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/4 - Terra e Fogo (A Defesa de Jukov).jpg" alt="A Defesa de Jukov">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>Terra e Fogo (A Defesa de Jukov)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Ciente do ataque, o marechal Gueorgui Jukov orquestrou a mais profunda e formidável rede defensiva militar já construída na história humana. Em vez de avançar, o Exército Vermelho usou meses para se enterrar no chão. Foram plantadas mais de um milhão de minas antitanque em seis cinturões defensivos sucessivos.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                Mais de um milhão de explosivos no chão<br>
+                                A terra de Kursk aguardando a sorte<br>
+                                Oito barreiras de pura tensão<br>
+                                O muro de aço, a barreira mais forte<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Canhões ocultados no meio do mato<br>
+                                Com fogo cruzado de força letal<br>
+                                Cada trincheira é um novo contrato<br>
+                                Com o anjo da morte no front oriental<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                O povo escavou a defesa sem fim<br>
+                                Trezentos quilômetros pro interior<br>
+                                Se a linha quebrar, tem o mesmo motim<br>
+                                Mais sete fileiras de puro terror<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O cerco está pronto, o açoite também<br>
+                                Ninguém passará sem sofrer o que vem<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A terra e o fogo forjando a muralha!<br>
+                                A linha profunda que engole o pavor<br>
+                                A cada quilômetro, a mesma batalha<br>
+                                A Rússia afogando o seu invasor!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Atrás da colina vigia a reserva<br>
+                                A Frente de Estepe prepara o canhão<br>
+                                Aguarda o momento que a raiva conserva<br>
+                                Pra lançar o ódio e tremer o chão<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                As zonas de tiro são bem desenhadas<br>
+                                Onde a artilharia irá fulminar<br>
+                                Destroça as frentes, que ficam isoladas<br>
+                                E a fúria da marcha começa a quebrar<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                A obra suprema da mente humana<br>
+                                A linha mais densa que o mundo já viu<br>
+                                Afunda na lama a esperança insana<br>
+                                E quebra o império num campo vazio<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                O cerco está pronto, o açoite também<br>
+                                Ninguém passará sem sofrer o que vem<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A terra e o fogo forjando a muralha!<br>
+                                A linha profunda que engole o pavor<br>
+                                A cada quilômetro, a mesma batalha<br>
+                                A Rússia afogando o seu invasor!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 05 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/5 - O Sangue da Madrugada (A Espera).jpg');">
+                <audio id="audio-5" src="musicas/05 - O Sangue da Madrugada (A Espera)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">5 - Sangue na Madrugada</div>
+                    <div class="name">(A Espera)</div>
+                    <div class="des">Os canhões soviéticos disparam antecipadamente na madrugada escurecida, quebrando o silêncio pré-batalha.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-5">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-5"></div></div>
+                        <span class="time-total" id="total-5">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(5)" id="btn-5">TOCAR FAIXA</button>
+                        <button onclick="openModal(5)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-5" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/5 - O Sangue da Madrugada (A Espera).jpg" alt="A Espera">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>Sangue na Madrugada (A Espera)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Na madrugada de 5 de julho de 1943, patrulhas de reconhecimento soviéticas capturaram soldados do Reich que confirmaram: o ataque começaria na alvorada. Tomando uma atitude ousada, Jukov ordenou um brutal e massivo ataque de artilharia preventiva exatamente sobre as posições onde as tropas alemãs estavam se agrupando para o ataque.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                Quatro de julho, o sol se apagou<br>
+                                Silêncio no campo, é de enlouquecer<br>
+                                O frio desceu e o soldado gelou<br>
+                                Sabendo que o inferno está pra nascer<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Tanques do Eixo repousam na grama<br>
+                                As tropas sussurram pedindo perdão<br>
+                                O medo da morte já ferve e inflama<br>
+                                As mentes perdidas na escuridão<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                O preso de guerra, em dor, confessou<br>
+                                A hora exata que o mal vai chegar<br>
+                                O rosto de Jukov em pedra mudou<br>
+                                E ordena que os canos comecem a urrar<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A noite se rasga antes da invasão<br>
+                                Desperta o monstro na escuridão<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A chuva de fogo na alta alvorada!<br>
+                                A força soviética ataca primeiro<br>
+                                Rompendo as linhas da tropa agrupada<br>
+                                Num golpe de aço, brutal e certeiro!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                As tropas de choque, na sua trincheira<br>
+                                São esmigalhadas no ponto inicial<br>
+                                O caos preventivo levanta a poeira<br>
+                                E cobra um preço de sangue e metal<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                O bombardeio foi tão incansável<br>
+                                Atrasou a ordem de marcha alemã<br>
+                                O chão estremece de modo implacável<br>
+                                Mudando a sorte na fria manhã<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                A densa fumaça começa a baixar<br>
+                                Revela os nervos que estão destroçados<br>
+                                A infantaria começa a marchar<br>
+                                Pisando nos corpos de seus aliados<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A noite se rasga antes da invasão<br>
+                                Desperta o monstro na escuridão<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A chuva de fogo na alta alvorada!<br>
+                                A força soviética ataca primeiro<br>
+                                Rompendo as linhas da tropa agrupada<br>
+                                Num golpe de aço, brutal e certeiro!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 06 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/6 - A Pinça Quebrada (O Ataque no Norte).jpg');">
+                <audio id="audio-6" src="musicas/06 - A Pinça Quebrada (O Ataque no Norte)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">6 - A Pinça Quebrada</div>
+                    <div class="name">(O Ataque no Norte)</div>
+                    <div class="des">O avanço alemão pelo flanco norte encontra uma barreira de artilharia impenetrável. O aço alemão sangra.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-6">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-6"></div></div>
+                        <span class="time-total" id="total-6">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(6)" id="btn-6">TOCAR FAIXA</button>
+                        <button onclick="openModal(6)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-6" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/6 - A Pinça Quebrada (O Ataque no Norte).jpg" alt="O Ataque no Norte">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>A Pinça Quebrada (Ataque no Norte)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> A pinça norte do ataque alemão foi liderada pelo agressivo General Walter Model, comandando o 9º Exército. O terreno era severo e os campos de minas eram virtualmente impenetráveis. Model tentou empurrar suas forças através de ataques frontais brutais, concentrando-se na estação ferroviária de Ponyri. O ataque norte empacou após avançar apenas cruéis 15 quilômetros.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                O Nono Exército ruge no norte<br>
+                                O general Model comanda o terror<br>
+                                Mas bate de frente num muro tão forte<br>
+                                E a infantaria se afoga em suor<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Avançam dez milhas e nada de luz<br>
+                                A terra minada devora a vanguarda<br>
+                                A linha de ferro o avanço reduz<br>
+                                A grande ofensiva no norte retarda<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                Os monstros pesados estão atolados<br>
+                                Sem ter proteção pra afastar o perigo<br>
+                                Estão na planície, em chamas, caçados<br>
+                                O grande colosso ficou sem abrigo<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A pinça do norte esmagou na pedreira<br>
+                                A glória alemã encontrou a barreira<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                Quebrou-se o dente da fera na rocha!<br>
+                                O sangue congela na artilharia<br>
+                                A força do Eixo, ferida e frouxa<br>
+                                E a glória de Hitler virou cinza fria!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Sem ter como ir pelo flanco, vão reto<br>
+                                O fim é selado na zona da morte<br>
+                                A linha de fogo é um golpe direto<br>
+                                Sem ter como abrir o caminho pro norte<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                O Alto Comando entende a fatura<br>
+                                O plano morreu logo na sua saída<br>
+                                A tropa foi ganha por essa amargura<br>
+                                Com a massa de corpos no barro abatida<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                As minas destroem a base do caos<br>
+                                Os tanques parados são alvo no chão<br>
+                                As bombas desabam como temporais<br>
+                                Selando no norte a total ilusão<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                A pinça do norte esmagou na pedreira<br>
+                                A glória alemã encontrou a barreira<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                Quebrou-se o dente da fera na rocha!<br>
+                                O sangue congela na artilharia<br>
+                                A força do Eixo, ferida e frouxa<br>
+                                E a glória de Hitler virou cinza fria!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 07 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/7 - O Avanço do Sul (A Fúria da SS).jpg');">
+                <audio id="audio-7" src="musicas/07 - O Avanço do Sul (A Fúria da SS)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">7 - O Avanço do Sul</div>
+                    <div class="name">(A Fúria da SS)</div>
+                    <div class="des">As divisões de elite alemãs rasgam a frente sul com força bruta, abrindo caminho em direção a Prokhorovka.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-7">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-7"></div></div>
+                        <span class="time-total" id="total-7">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(7)" id="btn-7">TOCAR FAIXA</button>
+                        <button onclick="openModal(7)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-7" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/7 - O Avanço do Sul (A Fúria da SS).jpg" alt="A Fúria da SS">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>O Avanço do Sul (A Fúria da SS)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> No flanco sul, o cenário foi muito mais letal. Comandados pelo brilhante estrategista Erich von Manstein, o 4º Exército Panzer encontrou uma brecha. Na vanguarda estava o II Corpo Panzer SS. As unidades blindadas de elite impuseram uma fúria avassaladora, conseguindo romper as primeiras linhas soviéticas em direção a Prokhorovka.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                Se o norte parou, pelo sul foi audaz<br>
+                                O Marechal ordenou o terror<br>
+                                A tropa de elite da Ésse-Ésse traz<br>
+                                A fúria letal num avanço traidor<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                A força de elite já vai rompendo<br>
+                                As duas primeiras barreiras do front<br>
+                                O aço alemão vai as linhas moendo<br>
+                                Cruzando a fumaça no negro horizonte<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                Os Tigers seguram o impacto feroz<br>
+                                O aço rebate o que o front arremessa<br>
+                                O grito de guerra tem áspera voz<br>
+                                E a linha russa recua depressa<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A fúria do sul corta a terra cravada!<br>
+                                O rio final dividindo o horizonte<br>
+                                A última linha de freio é esmagada<br>
+                                O cerco se fecha ao tomarem a ponte!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Dez milhas vazadas com sangue e com dor<br>
+                                Berlim recupera o seu otimismo<br>
+                                O russo percebe a pressão e o calor<br>
+                                E envia a reserva pro negro abismo<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                A guerra nas covas começa a sangrar<br>
+                                Fuzil e granada na mão do valente<br>
+                                As perdas são altas, não dá pra contar<br>
+                                Apenas a morte caminha na frente<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                O avanço afunila num único ponto<br>
+                                A vila desponta no mapa sangrento<br>
+                                As forças caminham pro grande confronto<br>
+                                Trazendo o terror de um fim violento<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A fúria do sul corta a terra cravada!<br>
+                                O rio final dividindo o horizonte<br>
+                                A última linha de freio é esmagada<br>
+                                O cerco se fecha ao tomarem a ponte!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 08 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/8 - O Encontro Marcado (A Marcha para Prokhorovka).jpg');">
+                <audio id="audio-8" src="musicas/08 - O Encontro Marcado (A Marcha para Prokhorovka)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">8 - O Encontro Marcado</div>
+                    <div class="name">(A Marcha)</div>
+                    <div class="des">A Quinta Unidade Blindada de Guardas recebe o comando e marcha veloz ao encontro dos pesados blindados inimigos.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-8">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-8"></div></div>
+                        <span class="time-total" id="total-8">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(8)" id="btn-8">TOCAR FAIXA</button>
+                        <button onclick="openModal(8)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-8" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/8 - O Encontro Marcado (A Marcha para Prokhorovka).jpg" alt="A Marcha">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>O Encontro Marcado (A Marcha)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Com a linha de defesa sul à beira do colapso pela fúria do ataque da SS, o Alto Comando Soviético ativou sua reserva estratégica: a 5ª Unidade Blindada de Guardas. Sob o calor escaldante, gerando colossais nuvens de poeira, mais de 800 tanques soviéticos marcharam a toda velocidade rumo ao sudoeste, com ordens expressas de interceptar a força inimiga em Prokhorovka.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                A Quinta Unidade Blindada levanta<br>
+                                Recebe o comando, de marcha veloz<br>
+                                O peso do aço, a poeira adianta<br>
+                                Mil tanques unindo uma única voz<br>
+                                O T trinta e quatro já foi avistado<br>
+                                O Tiger de longe consegue abater<br>
+                                Pra que o seu destino não seja selado<br>
+                                É a plena distância no campo correr<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Precisam voar no terreno de embate<br>
+                                Bater frente a frente no mar de metal<br>
+                                Sem freio, sem medo do duro combate<br>
+                                O choque tão curto será o sinal<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Pulsam corações no chassis apertado<br>
+                                O pé no limite, o front incendiado<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A marcha do choque, não há passo atrás!<br>
+                                A grande nevasca de ferro encontrar<br>
+                                O dom sacrifício é a luz que se faz<br>
+                                Pra o vil coração da Alemanha parar!<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                Retiram os rádios e a dor da lembrança<br>
+                                É no puro instinto, na mão e no grito<br>
+                                Aquele planalto virou a esperança<br>
+                                Da maior batalha que já foi escrito<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                No doze de julho, o sol reverbera<br>
+                                Nas turvas fileiras marchando no prado<br>
+                                O grande destino do mundo os espera<br>
+                                Dentro de um tanque em fogo abraçado<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                Eles vencem o morro e avistam o algoz<br>
+                                As torres virando, mirando a morte<br>
+                                O sangue já ferve numa única voz<br>
+                                Ninguém sai dali se não for pela sorte<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Pulsam corações no chassis apertado<br>
+                                O pé no limite, o front incendiado<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                A marcha do choque, não há passo atrás!<br>
+                                A grande nevasca de ferro encontrar<br>
+                                O dom sacrifício é a luz que se faz<br>
+                                Pra o vil coração da Alemanha parar!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- FAIXA 09 -->
+            <!-- ============================================== -->
+            <div class="item" style="background-image: url('imagens/9 - A Tempestade de Aço (O Ápice - Prokhorovka).jpg');">
+                <audio id="audio-9" src="musicas/09 - A Tempestade de Aço (O Ápice - Prokhorovka)_mastered.wav"></audio>
+                <div class="content">
+                    <div class="title">9 - Tempestade de Aço</div>
+                    <div class="name">(O Ápice - Prokhorovka)</div>
+                    <div class="des">O choque de monstros e a tormenta de aço. O caos reina na planície de Prokhorovka onde a tática perdeu o sentido.</div>
+                    
+                    <div class="progress-container">
+                        <span class="time-current" id="current-9">00:00</span>
+                        <div class="progress-bar"><div class="progress-fill" id="fill-9"></div></div>
+                        <span class="time-total" id="total-9">00:00</span>
+                    </div>
+
+                    <div class="btn">
+                        <button onclick="togglePlay(9)" id="btn-9">TOCAR FAIXA</button>
+                        <button onclick="openModal(9)">LER PAPER</button>
+                    </div>
+                </div>
+
+                <div id="conteudo-dossie-9" style="display: none;">
+                    <div class="dossie-layout">
+                        <div class="dossie-img-container">
+                            <img src="imagens/9 - A Tempestade de Aço (O Ápice - Prokhorovka).jpg" alt="Prokhorovka">
+                        </div>
+                        <div class="dossie-text">
+                            <h3>Tempestade de Aço (Prokhorovka)</h3>
+                            <p><strong>CONTEXTO HISTÓRICO:</strong> Em 12 de julho de 1943, as duas forças colidiram. Sem espaço para manobras, a ordem soviética foi avançar em velocidade máxima para anular o alcance letal dos Tigers alemães. O campo tornou-se um inferno à queima-roupa. Tanques batiam de frente, óleo fervendo espirrava pelas chapas rasgadas e as tripulações lutavam corpo a corpo na lama em meio a uma fumaça tão densa que escureceu o sol.</p>
+                            
+                            <h4>ARQUIVO DE ÁUDIO (LETRA)</h4>
+                            <p>
+                                <strong>[Verse 1]</strong><br>
+                                Os tanques soviéticos entram velozes<br>
+                                Colidem de frente na linha alemã<br>
+                                A luta silencia as últimas vozes<br>
+                                E o caos estilhaça a clara manhã<br><br>
+
+                                <strong>[Verse 2]</strong><br>
+                                Disparam canhões a dez metros do lado<br>
+                                A chapa é furada, o fogo é a lei<br>
+                                As torres explodem no aço rasgado<br>
+                                E o sangue batiza a queda do rei<br><br>
+
+                                <strong>[Verse 3]</strong><br>
+                                A fumaça escura consome o sol<br>
+                                Motores explodem no fogo cruzado<br>
+                                As chamas se erguem como um farol<br>
+                                No grande cemitério de ferro amassado<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Não há mais distância, o cano no peito<br>
+                                O inferno na terra impõe o seu pleito<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                O choque de monstros, a tormenta de aço!<br>
+                                O óleo fervendo no front que cedeu<br>
+                                O impacto violento que quebra o espaço<br>
+                                No campo maldito onde o homem morreu!<br><br>
+
+                                <strong>[Verse 4]</strong><br>
+                                Soldados rastejam na terra fumaça<br>
+                                Se matam com as mãos na lataria quente<br>
+                                O peso da guerra é uma feia desgraça<br>
+                                Num rio de lamas puxando a corrente<br><br>
+
+                                <strong>[Verse 5]</strong><br>
+                                A tática foge, o comando padece<br>
+                                É matar ou morrer, num cruel labirinto<br>
+                                O chão treme muito, o aço apodrece<br>
+                                Trocando a razão por um negro instinto<br><br>
+
+                                <strong>[Verse 6]</strong><br>
+                                A tarde declina num manto escarlate<br>
+                                Deixando as carcaças ao léu da ferida<br>
+                                O limite humano perdeu o combate<br>
+                                A dor foi o preço da glória obtida<br><br>
+
+                                <strong>[Pre-Chorus]</strong><br>
+                                Não há mais distância, o cano no peito<br>
+                                O inferno na terra impõe o seu pleito<br><br>
+
+                                <strong>[Chorus]</strong><br>
+                                O choque de monstros, a tormenta de aço!<br>
+                                O óleo fervendo no front que cedeu<br>
+                                O impacto violento que quebra o espaço<br>
+                                No campo maldito onde o homem morreu!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- FECHAMENTO DA DIV .list -->
+
+        <!-- CONTROLES DO CARROSSEL -->
+        <div class="arrows">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+        <div class="timeRunning"></div>
+
+    </div> <!-- FECHAMENTO DA DIV .carousel -->
+
+
+    <!-- ============================================== -->
+    <!-- CAIXA DO MODAL (Fica invisível na tela e recebe os dossiês) -->
+    <!-- ============================================== -->
+    <div id="modal-dossie" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-btn" onclick="closeModal()">X FECHAR RELATÓRIO</span>
+            <div class="modal-stamp">CONFIDENCIAL - FRONT LESTE</div>
+            <div id="modal-body">
+                <!-- O JavaScript injeta o conteúdo do dossiê selecionado aqui dentro -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Funcionamento -->
+    <script src="script.js"></script>
+
+</body>
+</html>
