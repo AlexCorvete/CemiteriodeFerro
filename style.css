@@ -403,3 +403,110 @@ a.active, a:hover {
     z-index: 50; /* Força o vídeo a saltar para a camada mais alta */
     pointer-events: auto; /* Obriga o navegador a aceitar o seu clique ali */
 }
+
+/* ========================================================= */
+/* RESPONSIVIDADE PARA TELEMÓVEIS (Telas até 768px de largura) */
+/* ========================================================= */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Navegação no Topo */
+    header nav {
+        gap: 15px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os links desçam de linha se não couberem */
+    }
+
+    /* 2. Textos e Títulos Principais */
+    .content {
+        width: 90%; /* Ocupa quase toda a largura do telemóvel */
+        left: 5%;   /* Centraliza com 5% de margem de cada lado */
+        top: 15%;   /* Sobe um pouco o conteúdo para não sobrepor as setas */
+    }
+
+    .content .title {
+        font-size: 50px; /* Reduz drasticamente os 85px para caber no telemóvel */
+        line-height: 1.1;
+        text-shadow: 
+            -1px -1px 0 #000, 1px -1px 0 #000,
+            -1px 1px 0 #000, 1px 1px 0 #000,
+            2px 2px 5px rgba(0, 0, 0, 0.9); /* Sombra mais compacta */
+    }
+
+    .content .name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .content .des {
+        font-size: 14px; /* Texto descritivo um pouco menor */
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* 3. Botões Principais */
+    .btn {
+        display: flex;
+        flex-direction: column; /* Empilha os botões um em cima do outro */
+        gap: 10px;
+    }
+
+    .btn button {
+        width: 100%; /* Botões ocupam toda a largura disponível */
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* 4. Setas do Carrossel */
+    .arrows {
+        bottom: 5%; /* Desce as setas para não ficarem em cima do texto */
+        gap: 10px;
+    }
+
+    .arrows button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* 5. Caixa do Modal / Dossiê */
+    .modal-box {
+        width: 95%; /* Modal ocupa quase toda a tela */
+        padding: 20px 15px;
+        margin: 10px auto;
+        max-height: 90vh; /* Garante que cabe na tela sem cortar o botão de fechar */
+    }
+
+    /* 6. Estrutura Interna do Dossiê */
+    .dossie-layout {
+        flex-direction: column; /* Coloca a imagem em cima e o texto em baixo */
+        align-items: center;
+    }
+
+    .dossie-img-container {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* Força os grids de fichas e vídeos a ficarem com apenas 1 coluna */
+    .tactical-grid, 
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* 7. Lightbox de Imagem */
+    .lightbox-content {
+        max-width: 95%;
+        margin-top: 20%;
+    }
+    
+    .lightbox-close {
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+    }
+}
