@@ -4,7 +4,7 @@ var nextBtn = document.querySelector('.next'),
     list = document.querySelector('.list'),
     runningTime = document.querySelector('.carousel .timeRunning');
 
-let timeRunning = 1000; 
+let timeRunning = 1000;
 let runTimeOut;
 let autoPlayTimeout;
 
@@ -16,7 +16,7 @@ function showSlider(type) {
     
     document.querySelectorAll('audio').forEach(audio => {
         audio.pause();
-        audio.currentTime = 0; 
+        audio.currentTime = 0;
     });
     
     document.querySelectorAll('.btn button:nth-child(1)').forEach(btn => {
@@ -52,8 +52,8 @@ function showSlider(type) {
 
 function resetTimeAnimation() {
     runningTime.style.animation = 'none';
-    runningTime.offsetHeight; 
-    runningTime.style.animation = null; 
+    runningTime.offsetHeight;
+    runningTime.style.animation = null;
     runningTime.style.animation = 'runningTime 1s linear 1 forwards';
 }
 
@@ -143,7 +143,7 @@ function openModal(id) {
                     iframe.setAttribute('src', realSrc);
                 }
             });
-        }, 300); 
+        }, 300);
     }
 }
 
@@ -153,11 +153,11 @@ function closeModal() {
     
     // Limpa os vídeos e os textos ao fechar
     setTimeout(() => {
-        document.getElementById('modal-body').innerHTML = ''; 
+        document.getElementById('modal-body').innerHTML = '';
     }, 300);
 }
-// --- FUNÇÕES DO LIGHTBOX DE IMAGENS ---
 
+// --- FUNÇÕES DO LIGHTBOX DE IMAGENS ---
 function abrirLightbox(src, caption) {
     // Pega os elementos do Lightbox
     var lightbox = document.getElementById("image-lightbox");
