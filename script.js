@@ -63,13 +63,28 @@ function syncUI() {
     
     if (audioSrc && audioSrc.trim() !== "") {
         mainPlayer.src = audioSrc;
+        
+        // Reativa o botão de Play no celular
+        if(mobilePlayPauseBtn) {
+            mobilePlayPauseBtn.style.opacity = '1';
+            mobilePlayPauseBtn.style.pointerEvents = 'auto';
+        }
+
         // Se já estava tocando uma, toca a próxima automaticamente
         if (wasPlaying) {
             mainPlayer.play().catch(e => console.log(e));
         }
     } else {
-        mainPlayer.removeAttribute('src'); // Capa não tem música
+        // Capa não tem música
+        mainPlayer.removeAttribute('src'); 
         mainPlayer.load();
+        
+        // Desativa o botão de Play no celular para indicar que não tem áudio
+        if(mobilePlayPauseBtn) {
+            mobilePlayPauseBtn.style.opacity = '0.3';
+            mobilePlayPauseBtn.style.pointerEvents = 'none';
+        }
+        mobileTotalDuration.innerText = "0:00";
     }
     
     // Reseta as barras de progresso virtuais
@@ -148,17 +163,23 @@ function updatePlayIcons() {
         mobilePlayPauseBtn.style.paddingLeft = isPlaying ? '0px' : '4px';
     }
     
-    // Resetar todos os botões do Desktop para "TOCAR FAIXA"
+    // Resetar botões do Desktop (protegendo a Capa)
     document.querySelectorAll('.btn button:nth-child(1)').forEach(btn => {
-        btn.innerText = "TOCAR FAIXA";
-        btn.style.background = "#8b0000";
+        if(btn.classList.contains('next-btn-capa')) {
+            btn.innerText = "INICIAR JORNADA";
+            btn.style.background = "#8b0000";
+        } else {
+            btn.innerText = "TOCAR FAIXA";
+            btn.style.background = "#8b0000";
+        }
     });
     
     // Atualiza apenas o botão do Desktop que está visível no centro
     let centerItem = list.querySelectorAll('.item')[1];
     let deskBtn = centerItem.querySelector('.btn button:nth-child(1)');
     
-    if (deskBtn && mainPlayer.src && !mainPlayer.src.endsWith("/")) {
+    // Confirma que não é a capa antes de mudar para PAUSAR FAIXA
+    if (deskBtn && !deskBtn.classList.contains('next-btn-capa') && mainPlayer.src && !mainPlayer.src.endsWith("/")) {
         deskBtn.innerText = isPlaying ? "PAUSAR FAIXA" : "TOCAR FAIXA";
         if (isPlaying) deskBtn.style.background = "#cba135"; // Fica dourado quando toca
     }
